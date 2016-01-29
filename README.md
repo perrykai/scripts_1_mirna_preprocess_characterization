@@ -35,12 +35,14 @@ Combined, there are a total of 174 libraries of quality small RNA sequencing dat
 
 |Software Used           | Parameters Used         | Function       |
 |:----------------       | :------------------     | :--------------|
-|[Fastx Toolkit/0.0.14](http://hannonlab.cshl.edu/fastx_toolkit/commandline.html): `fastx_quality_stats`   | `-i [input] -o [output] -Q33` | Pre- and post- trimming/filtering quality statistics, quality filtering
+|[Fastx Toolkit/0.0.14](http://hannonlab.cshl.edu/fastx_toolkit/commandline.html): `fastx_quality_stats`   | `-i [input] -o [output] -Q33` | Pre- and post- trimming/filtering quality statistics
 |[Cutadapt/1.4.1](http://cutadapt.readthedocs.org/en/stable/guide.html): `cutadapt`| `-a [adaptor seq] -m 26 -M 38 --info-file --rest-file --too-long-output -o` | Adaptor trimming, size filtering reads
 |Fastx Toolkit/0.0.14: `fastq_quality_filter`  | `-q 30 -p 50 -i [input] -o [output] -v > [verbose] -Q33` | Filter reads for low quality |
 |Fastx Toolkit/0.0.14: `fastx_collapser`| `-Q33 -i [input] -o [output] -v [verbose]` | Collapse adaptor-trimmed, quality- and size-filtered reads to obtain unique sequences with sequence ID and read count tag
 | [miRDeep2/0.0.5](https://www.mdc-berlin.de/36105849/en/research/research_teams/systems_biology_of_gene_regulatory_elements/projects/miRDeep/documentation): `mapper.pl` | `[input] -d -c -p [ref_genome] -s [processed.fa] -t [mapped.arf] -m -n -v`| Map the small RNA sequencing reads to the Sus scrofa reference genome (v 10.2.79) |
 | miRDeep2/0.0.5: `mirdeep2.pl` | `[processed.fa] [ref_genome] [mapped.arf] [ssc_mature_miR.fa] [hsa_mature_miR.fa] [ssc_hairpin2.fa] 2> [report.log]` | Quantify known, predict pig-novel miRNA |
+
+##Merging the Raw Fastq Files
 
 
 
