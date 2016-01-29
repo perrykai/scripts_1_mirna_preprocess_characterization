@@ -22,7 +22,7 @@
 #                  9_mirdeep2_genome_mapper_output/174_library_reads_mapped.arf
 
 #============================================
-#  Module used: miRDeep2/0.0.7
+#  Module used: miRDeep2/0.0.5
 #============================================
 
 #!/bin/sh  -login
