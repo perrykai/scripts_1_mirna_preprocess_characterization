@@ -7,7 +7,7 @@
 ##Table of Contents
 1. [Introduction] (#introduction)
 2. [Sequencing Overview] (#sequencing-overview)
-3. [Bioinformatics Softwares and Parameters Used] (#bioinformatics-softwares-and-parameters-used)
+3. [Bioinformatic Softwares and Parameters Used] (#bioinformatic-softwares-and-parameters-used)
 4. [Merging the Raw Fastq Files] (#merging-the-raw-fastq-files) 
 5. [Adaptor Trimming, Size- and Quality- Filtering with Cutadapt] (#adaptor-trimming,-size-and-quality-filtering-with-cutadapt)
 6. [PCR Duplicate Removal] (#pcr-duplicate-removal)
