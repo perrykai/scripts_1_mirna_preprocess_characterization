@@ -140,14 +140,30 @@ sum(mapsummary$total)
 
 mean(mapsummary$total)
 # [1] 1338086
+median(mapsummary$total)
+# [1] 1288872
 range(mapsummary$total)
 # [1]  571643 2513305
 mean(mapsummary$mapped)
 # [1] 1000386
+median(mapsummary$mapped)
+# [1] 973972
 range(mapsummary$mapped)
 # [1]  326303 1834999
 
-#Average reads mapped = 74.76%
+summary(mapsummary$total)
+#   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+# 571600 1124000 1289000 1338000 1571000 2513000
+
+summary(mapsummary$mapped)
+#   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+# 326300  848800  974000 1000000 1155000 1835000
+
+summary(mapsummary$percentmapped)
+#   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+# 0.5110  0.7470  0.7640  0.7509  0.7740  0.8020
+
+#Total reads mapped = 74.76%
 
 #Save file:
 write.table(mapsummary, file = "/mnt/research/pigeqtl/analyses/microRNA/1_preprocess_fastq_files/9_mirdeep2_genome_mapper_output/summary_files/174_library_mapper_output_summary.txt", quote = FALSE, sep = " ", row.names = FALSE, col.names = TRUE)
